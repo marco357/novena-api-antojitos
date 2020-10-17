@@ -4,7 +4,10 @@
   "description": "this is the final proyect of back-end",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "lint": "standard --fix | snazzy"
   },
   "keywords": [
     "api",
@@ -13,5 +16,12 @@
     "express"
   ],
   "author": "marco amrban",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9"
+  },
+  "devDependencies": {
+    "snazzy": "^8.0.0"
+  }
 }
